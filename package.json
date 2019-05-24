@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ci-build-prod": "ng build --prod",
+    "ci-lint": "tslint --project ./tslint.json --format junit --out testresults/lint-tests.xml"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +24,7 @@
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
+    "vss-web-extension-sdk": "^5.141.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

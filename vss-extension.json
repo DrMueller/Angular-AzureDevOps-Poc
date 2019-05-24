@@ -1,0 +1,39 @@
+{
+    "manifestVersion": 1,
+    "id": "Angular-AzureDevopc-POC",
+    "publisher": "DrMueller",
+    "version": "1.0.0",
+    "name": "Angular Azure DevOps POC",
+    "description": "A proof of concept for Angular with Azure DevOps extensions",
+    "public": true,
+    "categories": ["Azure Repos"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "my-hub",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-code-web.code-hub-group"
+            ],
+            "properties": {
+                "name": "My Hub",
+                "uri": "my-hub.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "my-hub.html",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ]
+}
