@@ -1,0 +1,12 @@
+name: 1.0$(rev:.r) # build numbering format
+
+resources:
+  repositories:
+  - repository: ALMStuff
+    type: github
+    name: DrMueller/ALMStuff
+    ref: refs/heads/master
+    endpoint: GitHub-DrMueller
+
+jobs:
+- template: AzureDevOps/Templates/JobTemplates/Angular/Build_And_Publish_AzureDevOps_Extension.yaml@ALMStuff
