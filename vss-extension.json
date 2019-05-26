@@ -1,12 +1,20 @@
 {
     "manifestVersion": 1,
     "id": "Angular-AzureDevopc-POC",
-    "publisher": "DrMueller",
+    "publisher": "DrMueller2",
     "version": "1.0.0",
     "name": "Angular Azure DevOps POC",
     "description": "A proof of concept for Angular with Azure DevOps extensions",
-    "public": true,
+    "public": false,
+    "icons": {
+        "default": "assets/M_256.png"
+    },
     "categories": ["Azure Repos"],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
