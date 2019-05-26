@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "Angular-AzureDevopc-POC",
     "publisher": "DrMueller2",
-    "version": "1.0.46",
+    "version": "1.0.54",
     "name": "Angular Azure DevOps POC",
     "description": "A proof of concept for Angular with Azure DevOps extensions",
     "public": false,
@@ -31,7 +31,7 @@
             ],
             "properties": {
                 "name": "My Angular App",
-                "uri": "dist/index.html"
+                "uri": "dist/entry-point.html"
             }
         }
     ],
