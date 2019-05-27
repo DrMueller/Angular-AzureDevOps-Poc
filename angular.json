@@ -24,14 +24,11 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/entry-point.html",
-              "src/test-dashboard.html"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
             "es5BrowserSupport": true
           },
           "configurations": {

@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "Angular-AzureDevopc-POC",
     "publisher": "DrMueller2",
-    "version": "1.0.86",
+    "version": "1.0.145",
     "name": "Angular Azure DevOps POC",
     "description": "A proof of concept for Angular with Azure DevOps extensions",
     "public": false,
@@ -24,14 +24,14 @@
     ],
     "contributions": [
         {
-            "id": "my-hub",
+            "id": "HelloWorldHub",
             "type": "ms.vss-web.hub",
             "targets": [
                 "ms.vss-code-web.code-hub-group"
             ],
             "properties": {
-                "name": "My Angular App",
-                "uri": "dist/entry-point.html"
+                "name": "Hello World Hub",
+                "uri": "vss/hubs/test-hub.html"
             }
         },
         {
@@ -45,7 +45,7 @@
                 "description": "My first widget",
                 "catalogIconUrl": "dist/assets/M_98.png",
                 "previewImageUrl": "dist/assets/M_98.png",
-                "uri": "dist/test-dashboard.html",
+                "uri": "vss/dashboards/test-dashboard.html",
                 "supportedSizes": [
                     {
                         "rowSpan": 1,
@@ -61,7 +61,13 @@
     "files": [
         {
             "path": "dist",
-            "addressable": true
+            "addressable": true,
+            "packagePath": "angular-app"
+        },
+        {
+            "path": "src/vss",
+            "addressable": true,
+            "packagePath": "vss"
         },
         {
             "path": "node_modules/vss-web-extension-sdk/lib",
