@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "Angular-AzureDevopc-POC",
     "publisher": "DrMueller2",
-    "version": "1.0.150",
+    "version": "1.0.152",
     "name": "Angular Azure DevOps POC",
     "description": "A proof of concept for Angular with Azure DevOps extensions",
     "public": false,
@@ -76,11 +76,6 @@
         },
         {
             "path": "node_modules/vss-web-extension-sdk/lib",
-            "addressable": true,
-            "packagePath": "lib"
-        },
-        {
-            "path": "node_modules/requirejs",
             "addressable": true,
             "packagePath": "lib"
         }
