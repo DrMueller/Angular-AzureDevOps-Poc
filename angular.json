@@ -25,7 +25,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/entry-point.html"
+              "src/entry-point.html",
+              "src/test-dashboard.html"
             ],
             "styles": [
               "src/styles.scss"

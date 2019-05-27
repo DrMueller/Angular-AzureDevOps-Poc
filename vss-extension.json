@@ -2,12 +2,12 @@
     "manifestVersion": 1,
     "id": "Angular-AzureDevopc-POC",
     "publisher": "DrMueller2",
-    "version": "1.0.55",
+    "version": "1.0.86",
     "name": "Angular Azure DevOps POC",
     "description": "A proof of concept for Angular with Azure DevOps extensions",
     "public": false,
     "icons": {
-        "default": "assets/M_256.png"
+        "default": "dist/assets/M_256.png"
     },
     "categories": [
         "Azure Repos"
@@ -33,6 +33,29 @@
                 "name": "My Angular App",
                 "uri": "dist/entry-point.html"
             }
+        },
+        {
+            "id": "HelloWorldWidget",
+            "type": "ms.vss-dashboards-web.widget",
+            "targets": [
+                "ms.vss-dashboards-web.widget-catalog"
+            ],
+            "properties": {
+                "name": "Hello World Widget",
+                "description": "My first widget",
+                "catalogIconUrl": "dist/assets/M_98.png",
+                "previewImageUrl": "dist/assets/M_98.png",
+                "uri": "dist/test-dashboard.html",
+                "supportedSizes": [
+                    {
+                        "rowSpan": 1,
+                        "columnSpan": 2
+                    }
+                ],
+                "supportedScopes": [
+                    "project_team"
+                ]
+            }
         }
     ],
     "files": [
@@ -42,6 +65,11 @@
         },
         {
             "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        },
+        {
+            "path": "node_modules/requirejs",
             "addressable": true,
             "packagePath": "lib"
         }

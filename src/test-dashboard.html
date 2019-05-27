@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../lib/VSS.SDK.min.js"></script>
+    <script type="text/javascript">
+        VSS.init({
+            explicitNotifyLoaded: true,
+            usePlatformStyles: true
+        });
+
+        VSS.ready(function () {
+            VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
+                WidgetHelpers.IncludeWidgetStyles();
+                VSS.register("HelloWorldWidget", function () {
+                    return {
+                        load: function (widgetSettings) {
+                            var $title = $('h2.title');
+                            $title.text('Hello World');
+
+                            return WidgetHelpers.WidgetStatusHelper.Success();
+                        }
+                    }
+                });
+                VSS.notifyLoadSucceeded();
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div class="widget">
+        <h2 class="title"></h2>
+    </div>
+</body>
+
+</html>

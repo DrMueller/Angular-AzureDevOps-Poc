@@ -16,7 +16,7 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "alwaysStrict": true, 
+    "alwaysStrict": true,
     "noImplicitThis": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
@@ -29,6 +29,9 @@
     "lib": [
       "es2018",
       "dom"
+    ],
+    "types": [
+      "vss-web-extension-sdk"
     ]
   }
 }

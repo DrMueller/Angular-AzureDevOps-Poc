@@ -14,7 +14,7 @@
     "ci-git-clean": "git reset --hard",
     "ci-git-config": "git config --global user.email \"matthiasm@live.de\" && git config --global user.name \"Matthias Mueller\"",
     "ci-publish-package": "tfx extension publish",
-    "build-package":"tfx extension create --rev-version"
+    "build-package": "tfx extension create --rev-version"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +27,7 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "core-js": "^2.5.4",
+    "requirejs": "^2.3.6",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "vss-web-extension-sdk": "^5.141.0",
