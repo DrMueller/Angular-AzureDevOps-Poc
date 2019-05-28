@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "Angular-AzureDevopc-POC",
     "publisher": "DrMueller2",
-    "version": "1.0.153",
+    "version": "1.0.156",
     "name": "Angular Azure DevOps POC",
     "description": "A proof of concept for Angular with Azure DevOps extensions",
     "public": false,
@@ -31,7 +31,13 @@
             ],
             "properties": {
                 "name": "Hello World Hub",
-                "uri": "vss/hubs/test-hub.html"
+                "uri": "vss/hubs/test-hub.html",
+                "iconAsset": "DrMueller2.Angular-AzureDevopc-POC/assets/M_98.png",
+                "_sharedData": {
+                    "assets": [
+                        "DrMueller2.Angular-AzureDevopc-POC/assets/M_98.png"
+                    ]
+                }
             }
         },
         {
