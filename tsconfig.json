@@ -31,7 +31,9 @@
       "dom"
     ],
     "types": [
-      "vss-web-extension-sdk"
+      "vss-web-extension-sdk",
+      "jasmine",
+      "node"
     ]
   }
 }
