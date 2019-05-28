@@ -14,7 +14,8 @@
     "ci-git-clean": "git reset --hard",
     "ci-git-config": "git config --global user.email \"matthiasm@live.de\" && git config --global user.name \"Matthias Mueller\"",
     "ci-publish-package": "tfx extension publish",
-    "build-package": "tfx extension create --rev-version"
+    "build-package": "tfx extension create --rev-version",
+    "tsc": "tsc --diagnostics"
   },
   "private": true,
   "dependencies": {

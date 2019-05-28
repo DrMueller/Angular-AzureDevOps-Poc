@@ -1,4 +1,3 @@
-/// <reference types="vss-web-extension-sdk" />
 import { Injectable } from '@angular/core';
 
 @Injectable({
