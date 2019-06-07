@@ -30,7 +30,7 @@
                 "ms.vss-code-web.code-hub-group"
             ],
             "properties": {
-                "name": "Hello World Hub",
+                "name": "Hello World Hub2",
                 "uri": "vss/hubs/test-hub.html",
                 "iconAsset": "DrMueller2.Angular-AzureDevopc-POC/assets/M_98.png",
                 "_sharedData": {
