@@ -1,8 +1,8 @@
 {
     "manifestVersion": 1,
-    "id": "Angular-AzureDevopc-POC",
+    "id": "Angular-AzureDevopc-POC2",
     "publisher": "DrMueller2",
-    "version": "1.0.156",
+    "version": "1.0.158",
     "name": "Angular Azure DevOps POC",
     "description": "A proof of concept for Angular with Azure DevOps extensions",
     "public": false,
