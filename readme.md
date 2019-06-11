@@ -25,9 +25,19 @@ npm run ci-build-prod
 npm run build-package
 ```
 
-3. Deploy the Azure DevOps
+3. Deploy to Azure DevOps
 
-This is currently done manually. For an example, see the "Getting started" link.
+This is currently done with Azure DevOps via the following task:
+```yaml
+- task: Npm@1
+  displayName: 'Publish TFX Package'
+  inputs:
+    command: custom
+
+    verbose: false
+
+    customCommand: 'run ci-publish-package -- --auth-type pat --token $(PublishToken)'
+```
 
 ## Links
 
