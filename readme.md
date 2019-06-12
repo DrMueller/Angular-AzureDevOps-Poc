@@ -15,29 +15,29 @@ The exemplary hub, dashboard and the init javascript are located in the vss-fold
 
 ## Build and deployment
 
-1. Build the Angular app
+### Foreword
+
+The actual deployment is done via Azure DevOps pipeline. To manually deploy, proceed with the following steps:
+
+1. Assure you have a registered publisher on the portal. Link: https://marketplace.visualstudio.com/manage/publishers
+2. In the vss-extension.json:
+ - Replace the publisher "DrMueller2" with yours. ATTENTION: The publisher id is also part of the the hub icons, assure to replace these paths too!
+ - Replace __BuildVersion__ with an actual version, for example "0.0.1"
+
+3. Build the Angular app
 ```
 npm run ci-build-prod
 ```
 
-2. Build the Azure DevOps VSIX Package
+4. Build the VSIX package
 ```
 npm run build-package
 ```
 
-3. Deploy to Azure DevOps
-
-This is currently done with Azure DevOps via the following task:
-```yaml
-- task: Npm@1
-  displayName: 'Publish TFX Package'
-  inputs:
-    command: custom
-
-    verbose: false
-
-    customCommand: 'run ci-publish-package -- --auth-type pat --token $(PublishToken)'
-```
+5. Upload the generated VSIX packag manually with in the publisher portal
+6. Share it with your company
+7. Install the extension via https://xxx.visualstudio.com/_settings/extensions?tab=shared
+8. Profit!
 
 ## Links
 
