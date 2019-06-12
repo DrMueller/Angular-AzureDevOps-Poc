@@ -11,8 +11,6 @@
     "ci-build-prod": "ng build --prod --output-hashing none",
     "ci-lint": "tslint --project ./tslint.json --format junit --out testresults/lint-tests.xml",
     "ci-unit-test": "ng run angular-azuredevops-poc:ci-unit-test",
-    "ci-git-clean": "git reset --hard",
-    "ci-git-config": "git config --global user.email \"matthiasm@live.de\" && git config --global user.name \"Matthias Mueller\"",
     "ci-publish-package": "tfx extension publish"
   },
   "private": true,
