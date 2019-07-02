@@ -10,7 +10,7 @@ The example contains two Azure DevOps extensions:
 
 ## Points of interest
 
-Instead of using the index.html, we use the Azure DevOps extension HTML files and load the Angular artfiacts manually.
+Instead of using the index.html, we use the Azure DevOps extension HTML files and load the Angular artifacts manually.
 The exemplary hub, dashboard and the init javascript are located in the vss-folder.
 
 ## Build and deployment
