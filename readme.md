@@ -15,9 +15,7 @@ The exemplary hub, dashboard and the init javascript are located in the vss-fold
 
 ## Build and deployment
 
-### Foreword
-
-The actual deployment is done via Azure DevOps pipeline. To manually deploy, proceed with the following steps:
+The actual deployment is done via Azure DevOps pipeline. To deploy manually, proceed with the following steps:
 
 1. Assure you have a registered publisher on the portal. Link: https://marketplace.visualstudio.com/manage/publishers
 2. In the vss-extension.json:
